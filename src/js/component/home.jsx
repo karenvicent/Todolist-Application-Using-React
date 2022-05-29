@@ -22,6 +22,7 @@ const Home = () => {
 		);
 		setListaTareas(listaRemovida);
 	};
+	const numeroTareas = listaTareas.length;
 	return (
 		<div className="caja">
 			<div className="titulo mx-auto" style={{ width: "50rem" }}>
@@ -55,6 +56,9 @@ const Home = () => {
 					))}
 				</ul>
 			</div>
+			<p className="me-auto p-2 text-muted fs-5 text-center display-1">
+				Te quedan {numeroTareas} tareas por terminar
+			</p>
 		</div>
 	);
 };
